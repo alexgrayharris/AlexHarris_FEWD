@@ -18,21 +18,29 @@ button {
   color: white;
   border: none;
 }
+
 /*Header styles*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  position: fixed;
+  height: 60px;
+  background-color: white;
+  width: 100%;
+  margin: 0;
 }
 
 header img {
   width: 50%;
+  padding-left: 15px;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
+  padding-right: 15px;
 }
 
 .navitem {
@@ -44,6 +52,7 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/melbourne.jpg);
   background-size: auto;
   background-position: center center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +125,7 @@ main p {
 }
 
 .photo-left2:hover .textleft {
-  opacity: 0.6; 
+  opacity: 0.6;
 }
 
 .photo-middle2 {
