@@ -1,0 +1,74 @@
+header {
+  background: url("http://i.imgur.com/BqBPGsA.jpg?1") no-repeat center center;
+  background-size: cover;
+  padding: 10px 20px 0 20px;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 100px;
+}
+/*re-formats the main heading for all pages except homepage*/
+.sideh1 {
+  color: white;
+  font-size: 35px;
+  text-align: left;
+  margin: 0;
+}
+ul {
+  background: rgba(255, 255, 255, 0.5);
+  margin: -50px -20px 0 -20px;
+  padding: 20px;
+}
+/*re-formats the navigation items for all pages except homepage*/
+.sideul {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  margin: 0 -20px 0 -20px;
+  padding: 0;
+}
+li {
+  display: inline;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 25px;
+  color: black;
+  padding: 0 30px 0 30px;
+}
+.sideli {
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #1fa5ff;
+}
+p {
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  margin-top: 50px;
+  max-width: 800px;
+  text-align: left;
+}
+img {
+  padding: 0 20px 20px 20px;
+}
+.highlight {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    padding-bottom: 50px;
+  }
+  li {
+    font-size: 20px;
+    padding: 0 7px 0 7px;
+    display: block;
+  }
+}
