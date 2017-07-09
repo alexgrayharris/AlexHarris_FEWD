@@ -1,0 +1,159 @@
+/*Main styles*/
+body {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  min-height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+ }
+
+button {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+  0 3px 10px 0 rgba(0,0,0,0.19);
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/*Styles for the header/section1*/
+header {
+  background-color: black;
+  border-bottom: 5px solid yellow;
+  margin: 0;
+}
+
+header h1 {
+  color: yellow;
+  font-family: 'Noticia Text', serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 0 0 10px;
+}
+
+/*Navigation bar in header/section1*/
+nav {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.bignav, .smallnav {
+  padding: 10px;
+}
+
+.bignav {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+/*Second section with one-liner*/
+.section2 {
+  background-color: #d1cfce;
+  font-family: 'Noticia Text', serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.section2 h2 {
+  margin: 0;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+/*Inline styles for second section*/
+.taste {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.are {
+  border-bottom: 2px solid yellow;
+}
+
+/*Third section main with text box */
+.section3 {
+  background: url(../images/coworking.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5%;
+}
+
+/*Slightly transparent text box in third section*/
+.section3 div{
+  background-color: rgba(255, 255, 255, .65);
+  border: 2px solid #d1cfce;
+  height: auto;
+  margin: 5% 5% 0 0;
+  min-width: 200px;
+  text-align: center;
+  width: 30%;
+}
+
+.section3 h1 {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 10px 0 10px;
+  text-align: left;
+}
+
+.section3 p {
+  padding: 0 10px 10px 10px;
+  text-align: left;
+}
+
+.section3 button {
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+/*Fourth section with three modules*/
+.section4 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 25px 0;
+  text-align: center;
+}
+
+.section4 h1 {
+  font-family: 'Noticia Text', serif;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.section4 p {
+  padding: 0 20px;
+  text-align: left;
+}
+
+.section4 button {
+  background-color: #d1cfce;
+}
+
+.module1, .module2 {
+  border-right: 1px solid #d1cfce;
+}
+
+/*Footer and copyright line at bottom*/
+footer {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 2px 15px;
+}
