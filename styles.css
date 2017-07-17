@@ -1,0 +1,433 @@
+/*Colors:
+#303030 almost black
+#9a9a9a gray
+#E1F5F5 light gray
+#6DC8BF teal
+#FDB913 yellow
+#F15A22 orange*/
+
+/*Fonts:
+font-family: 'Bad Script', cursive;
+font-family: 'Lato', sans-serif;*/
+
+/**/
+/**/
+/*General settings*/
+/**/
+/**/
+
+
+h1 {
+  color: #6DC8BF;
+  font-family: 'Bad Script', cursive;
+  font-size: 125px;
+}
+
+h2 {
+  color: #303030;
+  font-family: 'Bad Script', cursive;
+  font-size: 48px;
+}
+
+h3 {
+  color: #303030;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+
+h4 {
+  color: #303030;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: #303030;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #303030;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6DC8BF;
+}
+
+/*Signup form for mail list*/
+#signup-form {
+  display: block;
+  width: 30%;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid #6DC8BF;
+  font-family: 'Lato', sans-serif;
+  display: block;
+  margin: 5px;
+  outline: none;
+  padding: 5% 0;
+  width: 100%;
+}
+
+input[type=text]:focus {
+  border-bottom: 3px solid #6DC8BF;
+}
+
+input[type=checkbox] + label {
+  display: inline-block;
+}
+
+/*Submit button*/
+.submit-button {
+  background-color: #FDB913;
+  border: 0;
+  border-radius: 5px;
+  color: #303030;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  padding: 5px 35px;
+}
+
+/**/
+/*Header with main photo, title, and logo (three vertical panes)*/
+/**/
+
+/*Header container*/
+header {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Main photo on left side of screen*/
+#main-photo {
+  align-self: flex-start;
+  background: url('../img/prettycoffee.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center left;
+  display: flex;
+  height: 100vh;
+  width: 40vw;
+}
+
+/*Title in center of screen, also a container for subheading*/
+#title {
+  width: 30vw;
+}
+
+#title h1 {
+  align-self: center;
+  display: flex;
+  margin-left: -12vw;
+  text-align: left;
+  text-shadow: 1px 1px 15px #ffffff;
+}
+
+/*Subtitle*/
+#title h3 {
+  color: #303030;
+  margin: -8vh 0 10vh 2vw;
+  width: 100%;
+}
+
+/*Third pane in header container*/
+#logo-nav-container {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  text-align: right;
+  width: 30vw;
+}
+
+/*Nav in top right, make horizontal*/
+#main-nav {
+  color: #303030;
+  display: flex;
+  margin: 2vh 2vh 0 -10vw;
+  text-align: right;
+}
+
+.nav-item {
+  color: #303030;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+}
+
+/*Logo on bottom right, make a fixed width with some padding*/
+.logo {
+  height: auto;
+  padding: 5%;
+  transition: .5s ease-in-out;
+  width: 150px;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/**/
+/*Section 2 with navigation and other content*/
+/**/
+
+/*Section 2 container*/
+#section2 {
+  align-items: center;
+  background-color: #F15A22;
+  display: flex;
+  height: 50vh;
+  justify-content: space-around;;
+}
+
+.white-logo {
+  height: auto;
+  margin: 5%;
+  width: 25%;
+}
+
+.white-logo-img {
+  height: 45vh;
+}
+
+#quote1 {
+  margin: 5%;
+  text-align: right;
+  width: 55%;
+}
+
+#quote1 h3 {
+  color: white;
+}
+
+/**/
+/*Section3 with signup form and Twitter feed*/
+/**/
+
+/*Section 3 container*/
+#section3 {
+  display: flex;
+  align-items: center;
+  height: 65vh;
+  justify-content: space-around;
+}
+
+/*Embed a Twitter feed on left*/
+#twitter-feed {
+  border: 1px solid red;
+  height: 300px;
+  width: 300px;
+}
+
+/**/
+/*Section 4 includes two pictures that slide out more info*/
+/**/
+
+/*Section 4 container*/
+#section4 {
+  background-color: #E9F5F5;
+  height: 80vh;
+}
+
+#section4 h3 {
+  padding: 5% 5% 1% 5%;
+}
+
+#info-slider-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Left info slider styles and background*/
+#left-info-slider {
+  background: url("../img/woman_working.jpg") no-repeat center center, rgba(255,255,255,0.4);
+  background-size: cover;
+  height: 40vh;
+  width: 40%;
+}
+
+#left-info-slider:hover {
+  background: linear-gradient(to bottom left, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/woman_working.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*Right info slider styles and background*/
+#right-info-slider {
+  background: url("../img/manonphone.jpg") no-repeat center top;
+  background-size: cover;
+  height: 40vh;
+  width: 40%;
+}
+
+#right-info-slider:hover {
+  background: linear-gradient(to bottom left, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/manonphone.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+#left-info, #right-info {
+  display: none;
+  padding: 5%;
+}
+
+#left-info p, #right-info p {
+  color: white;
+}
+
+/**/
+/*Section 5 including three community profiles*/
+/**/
+
+/*Section 5 container*/
+#section5 {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+/*Generic styles for three community profiles*/
+.profile {
+  height: 75%;
+  width: 350px;
+}
+
+/*Left profile*/
+#profile1 {
+  background: url("../img/small_town1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#profile1:hover {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/small_town1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*Middle profile*/
+#profile2 {
+  background: url("../img/city_neighborhood.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#profile2:hover {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/city_neighborhood.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/*Right profile*/
+#profile3 {
+  background: url("../img/city_towers.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#profile3:hover {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/city_towers.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+
+/**/
+/*Footer with basic information*/
+/**/
+footer {
+  background-color: #F15A22;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25vh;
+  margin: auto;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
+
+/*Adjust social media icons*/
+.social-icon {
+  height: auto;
+  width: 20%;
+  padding: 0 10%;
+}
+
+/*Align social-media icons side-by-side*/
+.social-media {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/**/
+/*Secondary pages*/
+/**/
+
+/*Secondary page header with background image, website title, and page title*/
+.secondary-header {
+  align-items: flex-end;
+  background: url('../img/table.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: space-around;
+  padding: 2%;
+  text-align: right;
+}
+
+/*Header text styles*/
+#secondary-h2, #secondary-h3 {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.secondary-header h2:hover {
+  color: #6DC8BF;
+}
+
+/*Body of secondary pages*/
+main {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Left panel includes nav and small logo*/
+#secondary-left-panel {
+  display: block;
+  padding: 5%;
+  text-align: right;
+  width: 20vw;
+}
+
+#secondary-nav {
+  display: block;
+  width: 100%;
+}
+
+.small-logo {
+  width: 75%;
+  height: auto;
+  transition: .5s ease-in-out;
+}
+
+.small-logo:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*Right panel includes main content*/
+#secondary-right-panel {
+  width: 80vw;
+  padding: 5%;
+}
